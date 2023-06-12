@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Login</title>
+</head>
+<body>
+  
+
+<div class="container">
+    <div class="box">
+      <div class="options">
+        <button class="active" onclick="showLogin()">Iniciar Sesión</button>
+        <button onclick="showRegister()">Registrarse</button>
+      </div>
+
+      <form id="loginForm" class="form" style="display: block;">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Contraseña" required>
+        <button class="submit-button">Enviar</button>
+      </form>
+
+      <form id="registerForm" class="form" style="display: none;">
+        <input type="text" placeholder="Nombre" required>
+        <input type="text" placeholder="Apellido Paterno" required>
+        <input type="text" placeholder="Apellido Materno" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Contraseña" required>
+        <button class="submit-button">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
